@@ -1,13 +1,19 @@
 {
   "compilerOptions": {
-    "target": "es2018",
+    "lib": ["es5", "es6", "dom"],
+    "target": "es5",
     "module": "commonjs",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "outDir": "./dist",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "strictPropertyInitialization": false,
+    "allowImportingTsExtensions": true,
   },
-  "include": ["src/**/*.ts"],
+  "include": ["src/**/*.ts", "src/**/**/*.ts"],
   "exclude": ["node_modules"]
 }
